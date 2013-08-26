@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#######################################
+#this is the default install directory
+#
+instdir="/home/pi/OctoPrint"
+#
+######################################
 
 clear
 
@@ -33,7 +39,7 @@ sudo mkdir /home/pi/.config/autostart
 cd ~
 sudo apt-get install python-pip python-dev git -qy
 #git clone https://github.com/foosel/OctoPrint.git
-cd OctoPrint
+cd $instdir/
 sudo pip install -r requirements.txt
 
 
