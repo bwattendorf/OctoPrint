@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#######################################
-#this is the default install directory
-#
-instdir="/home/pi/pork_pi"
-#
-######################################
-
 
 clear
 
@@ -62,10 +55,17 @@ sudo pip install -r requirements.txt
 
 cd ~
 sudo apt-get install subversion libjpeg8-dev imagemagick libav-tools -qy
-wget -O mjpg-streamer.tar.gz http://mjpg-streamer.svn.sourceforge.net/viewvc/mjpg-streamer/mjpg-streamer/?view=tar
-tar xfz mjpg-streamer.tar.gz
-cd mjpg-streamer
+
+svn co https://mjpg-streamer.svn.sourceforge.net/svnroot/mjpg-streamer mjpg-streamer
+
+
+cd mjpg-streamer/mjpg-streamer
+
 make
+
+# now to install haproxy
+
+
 
 
 sudo apt-get install haproxy -qy
