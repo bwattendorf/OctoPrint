@@ -59,7 +59,7 @@ sudo apt-get install subversion libjpeg8-dev imagemagick libav-tools -qy
 
 svn co https://mjpg-streamer.svn.sourceforge.net/svnroot/mjpg-streamer mjpg-streamer
 
-cd mjpg-streamer/mjpg-streamer
+cd /home/pi/mjpg-streamer
 
 make
 
