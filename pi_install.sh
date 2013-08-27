@@ -29,7 +29,7 @@ sudo mkdir /home/pi/.config/autostart
 
 
 #NOTE need to fix this and add $instdir
-#sudo cp $instdir/server/config/tightvnc.desktop #/home/pi/.config/autostart/tightvnc.desktop
+sudo cp $instdir/Raspberry_pi_install/tightvnc.desktop  home/pi/.config/autostart/tightvnc.desktop
 
 
 
@@ -46,8 +46,8 @@ sudo pip install -r requirements.txt
 sudo usermod -a -G tty pi
 sudo usermod -a -G dialout pi
 
-sudo pip uninstall flask werkzeug
-sudo pip install flask==0.9 werkzeug==0.8.3
+#sudo pip uninstall flask werkzeug
+#sudo pip install flask==0.9 werkzeug==0.8.3
 
 
 
