@@ -9,7 +9,7 @@ instdir="/home/pi/OctoPrint"
 
 clear
 
-cd~
+cd ~
 
 
 #first lets update and upgrade the pi
